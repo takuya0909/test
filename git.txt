@@ -7,6 +7,15 @@
 # git diff
     ワークツリーとステージエリアの差分を確認。
 
+# git diff --cached
+    ステージエリアとコミットしたGitディレクトリの差分確認
+
+# git checkout -- [ファイル名]
+    ワークツリーの変更を取り消す。
+
+#git reset HEAD [ファイル名]
+    ステージエリアの状態を最新のコミットした状態に戻す。
+
 # git add [ファイル名]
   　ワークツリーにあるファイルをステージエリアに登録
 
@@ -21,3 +30,21 @@
 
 # git clone [github のSSHのURL]
 　　GitHub上のリポジトリをローカルリポジトリ（自分の端末）に複製する
+
+#git branch
+    branch一覧表示
+
+#git branch [ブランチ名]
+    ブランチ作成
+
+# git checkout　[ブランチ名]
+    ブランチの切り替え
+
+# git push origin [ブランチ名]
+　　コミットした内容をGitHub上にアップロードする
+
+#git で管理しないファイルの設定
+　.gitgnore を作成  3つ方法がある。
+　　1、 test/index.html　ファイル名を直接指名する
+　　2、 test             ディレクトリ名を指定する
+　　3、 *.html           ファイルの拡張子で指名する
